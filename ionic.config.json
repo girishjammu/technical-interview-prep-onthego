@@ -1,0 +1,8 @@
+{
+  "name": "technical-interview-prep-onthego",
+  "app_id": "a87abe82",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
