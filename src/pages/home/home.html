@@ -1,18 +1,46 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content class="tutorial-page">
+  <ion-slides pager>
+    <ion-slide class="slide-1-background">
+      <h2 class="slide-title">Interview App</h2>
+      <p> This is an app to help you Ace the technical interview.
+        It is a collection of question and answers to the most popular front-end technical questions.</p>
+      <button ion-button large clear icon-end color="light">
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+    <ion-slide>
+      <form id="signup-form1">
+        <ion-list id="signup-list4">
+          <ion-item id="signup-input1">
+            <ion-label>
+              Name
+            </ion-label>
+            <ion-input type="text" placeholder=""></ion-input>
+          </ion-item>
+          <ion-item id="signup-input2">
+            <ion-label>
+              Email
+            </ion-label>
+            <ion-input type="email" placeholder=""></ion-input>
+          </ion-item>
+          <ion-item id="signup-input3">
+            <ion-label>
+              Password
+            </ion-label>
+            <ion-input type="text" placeholder=""></ion-input>
+          </ion-item>
+        </ion-list>
+        <button id="signup-button1" ion-button color="positive" block>
+          Sign up
+        </button>
+        <button id="signup-button5" ion-button color="light" block>
+          Skip
+        </button>
+      </form>
+      <button ion-button large clear icon-end color="primary" on-click="goToQuestion()">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
